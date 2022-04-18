@@ -5,7 +5,11 @@ import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./frontend/context/authContext";
-import { ThemeProvider } from "./frontend/context";
+import {
+  PlaylistProvider,
+  ThemeProvider,
+  VideoListingProvider,
+} from "./frontend/context";
 
 // Call make Server
 makeServer();
@@ -13,10 +17,14 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ThemeProvider>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <ThemeProvider>
+        <VideoListingProvider>
+          <AuthProvider>
+            <PlaylistProvider>
+              <App />
+            </PlaylistProvider>
+          </AuthProvider>
+        </VideoListingProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,

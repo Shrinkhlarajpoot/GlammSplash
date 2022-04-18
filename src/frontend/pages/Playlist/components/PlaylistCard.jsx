@@ -1,16 +1,21 @@
+import { usePlaylists } from "../../../customHooks/usePlaylist"
 import "./PlaylistCard.css"
-const PlaylistCard = () => {
+const PlaylistCard = ({playlist}) => {
+  const {deletePlaylist}=usePlaylists();
   return (
+
     <div className="videocard playlistcard">
       <img
         className="videocard_img playlist_img"
-        src="https://i.ytimg.com/vi/EkGOC5gs1ao/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUlYEqcu-x-i5F9KBfQPh7L_S2NQ"
+        src={playlist?.videos[0]?.thumbnail || "./assests/playlist.jpg" }
+      
+        
       ></img>
       <div className="playlistcard_desp-desp">
-        <h2>Playlist1</h2>
-        <span class="material-icons">delete</span>
+        <h2>{playlist.title}</h2>
+        <span class="material-icons" onClick={()=>deletePlaylist(playlist._id)}>delete</span>
        </div>
-       <div className="playlistcard_items">5</div>
+       <div className="playlistcard_items">{playlist.videos.length}</div>
     </div>
   );
 };

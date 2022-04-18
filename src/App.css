@@ -32,6 +32,19 @@ body{
   --text-color:rgb(32, 33, 36);
   --bg2-color:white;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  background:lightgray;
+}
+
+::-webkit-scrollbar-track {
+ border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background:var(--primary-color);
+} 
 
 @media screen and (max-width: 490px) {
   html {
