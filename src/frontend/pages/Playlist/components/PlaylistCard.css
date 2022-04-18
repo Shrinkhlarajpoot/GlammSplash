@@ -1,0 +1,29 @@
+
+.playlistcard{
+    min-width: 22rem;
+    position: relative;
+}
+.playlist_img{
+    height:10rem;
+}
+.playlistcard_items{
+    position: absolute;
+    width:5rem;
+    height:80%;
+    right:0;
+    top:0;
+   background-color: rgb(32,33,36,0.6);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size:2rem;
+   color:var(--primary-color)
+  
+}
+.playlistcard_desp-desp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+    color:var(--text-color)
+}
