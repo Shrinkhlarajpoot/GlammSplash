@@ -15,7 +15,7 @@ const addNewPlaylistService = (newPlaylistName, token) => {
     }
   );
 };
-const deletePlaylistService = ({ token, playlistId }) => {
+const deletePlaylistService = ({token, playlistId} ) => {
   return axios.delete(`/api/user/playlists/${playlistId}`, {
     headers: { authorization: token },
   });
@@ -34,6 +34,7 @@ const deleteVideoFromPlaylistService = ({
   videoInPlaylist,
   playlist,
 }) => {
+
   return axios.delete(
     `/api/user/playlists/${playlist._id}/${videoInPlaylist._id}`,
     {

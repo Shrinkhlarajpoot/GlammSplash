@@ -1,0 +1,24 @@
+.single_playlist_container{
+    width:100%;
+    padding:0 0 0 2rem;
+    align-content: flex-start;
+}
+.heading_for_emptypage2{
+       width: 100%;
+       color:var(--text-color);
+       margin: 2rem auto;
+      font-size: 1.2rem;
+}
+.heading_for_emptypage{
+    color:var(--text-color);
+    margin: 2rem 0  1rem 3rem;
+    padding:0 5rem 0 0;
+    font-size: 1.2rem;
+    
+}
+.single_playlist_container-headings{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+}

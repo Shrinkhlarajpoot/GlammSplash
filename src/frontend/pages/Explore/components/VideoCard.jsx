@@ -2,11 +2,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import "./VideoCard.css";
 import { PlaylistModal } from "../../../components";
+import { useAuth } from "../../../context";
 const VideoCard = ({ video }) => {
   const [showPlaylistModal,setShowPlaylistModal] = useState(false);
   const navigate = useNavigate();
   const [showMoreOptionsModal, setShowMoreOptionsModal] = useState(false);
   const videoRef = useRef();
+  const {auth:{token}}=useAuth()
   useEffect(() => {
     const closeModal = (e) => {
       if (
@@ -17,8 +19,7 @@ const VideoCard = ({ video }) => {
         setShowMoreOptionsModal(false);
       }
     };
-
-    document.addEventListener("mousedown", closeModal);
+  document.addEventListener("mousedown", closeModal);
 
     return () => document.removeEventListener("mousedown", closeModal);
   }, [showMoreOptionsModal]);
@@ -55,7 +56,7 @@ const VideoCard = ({ video }) => {
           <li>
             <span class="material-icons-round">thumb_up</span>Add to Like Videos
           </li>
-          <li  onClick={()=>setShowPlaylistModal(true)}>
+          <li  onClick={()=>token ?setShowPlaylistModal(true):  navigate("/login")}>
             <span class="material-icons">create_new_folder</span> Add to
             Playlist
           </li>

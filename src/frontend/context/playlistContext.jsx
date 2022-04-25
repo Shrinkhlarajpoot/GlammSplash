@@ -10,6 +10,7 @@ const PlaylistProvider = ({ children }) => {
   } = useAuth();
   const [playlistsState, dispatchPlaylists] = useReducer(playListReduceFunc, {
     playlists: [],
+    loading: false,
   });
   useEffect(() => {
     token &&
@@ -17,7 +18,7 @@ const PlaylistProvider = ({ children }) => {
         try {
           const { data, status } = await getPlaylistsService(token);
           if (status === 200) {
-            console.log(data,"fromgetplaylist fun")
+            console.log(data, "fromgetplaylist fun");
             dispatchPlaylists({
               type: "GET_PLAYLISTS",
               payload: { playlists: data.playlists },
@@ -27,13 +28,12 @@ const PlaylistProvider = ({ children }) => {
           console.log(error);
         }
       })();
-
-    
-    
-
-  
   }, [token]);
 
-  return <PlaylistContext.Provider value={{playlistsState, dispatchPlaylists}}>{children}</PlaylistContext.Provider>;
+  return (
+    <PlaylistContext.Provider value={{ playlistsState, dispatchPlaylists }}>
+      {children}
+    </PlaylistContext.Provider>
+  );
 };
-export { PlaylistProvider,PlaylistContext};
+export { PlaylistProvider, PlaylistContext };

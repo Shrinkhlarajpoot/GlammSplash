@@ -1,9 +1,8 @@
 const playListReduceFunc = (state, { payload, type }) => {
   switch (type) {
     case "GET_PLAYLISTS":
-      return { ...state,
-         playlists: payload.playlists 
-        };
+      return { ...state, playlists: payload.playlists };
+
     case "ADD_VIDEO_TO_PLAYLIST":
       return {
         ...state,
@@ -18,8 +17,8 @@ const playListReduceFunc = (state, { payload, type }) => {
           playlist._id === payload.playlist._id ? payload.playlist : playlist
         ),
       };
-      default:
-          return state
+    default:
+      return state;
   }
 };
-export {playListReduceFunc}
+export { playListReduceFunc };

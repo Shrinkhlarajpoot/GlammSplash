@@ -16,6 +16,7 @@ const usePlaylists = () => {
     auth: { token },
   } = useAuth();
 const createNewPlaylist = async (newPlaylistName, video) => {
+  if(token){
     try {
       const { data, status } = await addNewPlaylistService(
         newPlaylistName,
@@ -38,8 +39,10 @@ const createNewPlaylist = async (newPlaylistName, video) => {
       toast.error("PLease Login To Continue")
       console.error(err.response);
     }
+  }
   };
   const addVideoToPlaylist = async ({ playlist, video }) => {
+    if(token){
     try {
       const { data, status } = await addVideoToPlaylistService({
         token,
@@ -58,9 +61,11 @@ const createNewPlaylist = async (newPlaylistName, video) => {
       toast.error("No Video to Add")
       console.error(err);
     }
+  }
   };
 
-  const deleteVideoFromPlaylist = async ({ videoInPlaylist, playlist }) => {
+  const deleteVideoFromPlaylist = async ( {videoInPlaylist,playlist}) => {
+ if(token){
     try {
       const { data, status } = await deleteVideoFromPlaylistService({
         token,
@@ -79,8 +84,10 @@ const createNewPlaylist = async (newPlaylistName, video) => {
       toast.error("Try Again Later")
       console.error(err);
     }
+  }
   };
   const deletePlaylist = async (playlistId) => {
+    if(token){
     try {
       const { data, status } = await deletePlaylistService({
         token,
@@ -98,6 +105,7 @@ const createNewPlaylist = async (newPlaylistName, video) => {
       toast.error("Try Again Later")
       console.error(err);
     }
+  }
   };
 
   return {

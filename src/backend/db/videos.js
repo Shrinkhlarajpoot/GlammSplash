@@ -7,24 +7,11 @@ import { viewsFormatter } from "../../frontend/utils";
  
 
 export const videos = [
-  // {
-  //   _id: "Wo5dMEP_BbI",
-  //   title: "Awesome Video about Coding",
-  //   description:
-  //     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-  //   creator: "Soham Shah",
-  // },
-  // {
-  //   _id: "F_Riqjdh2oM",
-  //   title: "Neural Networks from Scratch - P.1 Intro and Neuron Code",
-  //   creator: "Sentdex",
-  //   description:
-  //     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-  // },
-//   https://www.youtube.com/embed/iRP-FBMRxJk
+ 
+
   {
-		_id: uuid(),
-		title: "Katrina's Kaif EveryDay Maekup Looks",
+	_id: uuid(),
+		title: "Katrina's Kaif EveryDay Makeup Look",
 		creator: "Nykaa Fashion",
 		thumbnail: "https://i.ytimg.com/vi/nsOD3p2PfZk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBYmZiLzxja1XFwe6VGODtTRNYV0A",
 		src: "https://www.youtube.com/embed/nsOD3p2PfZk",
@@ -33,7 +20,7 @@ export const videos = [
 		views: viewsFormatter(190000),
     Category:"makeup",
     PublishDate:"22 Feb 2021",
-	desp:"",
+	desp:"Bollywood Star Katrina Kaif is bound to be a perfect 10/10 even with minimum makeup. She is famous for carrying simple nude makeup looks like no one else giving everybody major makeup goals In this video, Katrina Kaif will show the classic Kay Look that will look good with any outfit using products from her makeup line - Kay Beauty. Katrina's everyday makeup look is super easy to create and will surely make you look stunning!",
 	
 	},
   {
@@ -47,7 +34,7 @@ export const videos = [
 		views: viewsFormatter(39000),
     Category:"hairstyle",
     PublishDate:"5 Oct 2015",
-	desp:"",
+	desp:"Jessica starts the tutorial with a beach wave in her hair for texture. Gather hair into a loose low ponytail using a thin hair tie. Pull the roots out of the ponytail to make it bigger. Take small pieces of hair by the face out of the ponytail to help frame the face. Using a piece of hair from below the ponytail, wrap the hair around the elastic to cover it up. Add finishing touches to the low ponytail using the Light Elements Defining Whip to give it that messy look.",
 	},
   {
 		_id: uuid(),
@@ -60,7 +47,7 @@ export const videos = [
 		views: viewsFormatter(1500000),
     Category:"makeup",
     PublishDate:"2 March 2020",
-	desp:"",
+	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
 		_id: uuid(),
@@ -73,7 +60,7 @@ export const videos = [
 		views:viewsFormatter(107380),
     Category:"makeup",
     PublishDate:"1 Feb 2016",
-	desp:"",
+	desp:"Welcome to my SMOKEY EYE Series!!!!Here's tutorial 1 from my smokey eye series which is a super easy, affordable, sexy, sultry, feline smokey eye. I find this super easy and it works with a lot of looks and outfits! Do try it out and let me know how it went!",
 	},
   {
 		_id: uuid(),
@@ -86,7 +73,7 @@ export const videos = [
 		views: viewsFormatter(56000),
     Category:"hairstyle",
     PublishDate:"10 Sep 2011",
-	desp:"",
+	desp:"Hi guys welcome back to my channel ❤️ I know I uploaded this video after here's are some sexy hairstyle you can try and enchance your collge looks.❤️",
 	},
   {
 		_id: uuid(),
@@ -99,7 +86,7 @@ export const videos = [
 		views: viewsFormatter(158580),
     Category:"makeup",
     PublishDate:"20 Dec 2011",
-	desp:"",
+	desp:"Today i'm doing a makeup tutorial inspired by INSTAGRAM BADDIES! I even cream contoured haha using my kit from http://www.iconiclondoninc.com/ xx- GIANT KOREAN BEAUTY HAUL https://www.youtube.com/watch?v=ODxJC...- MOST FUN EVER https://www.youtube.com/watch?v=JBila...- New videos every Mon, Wed and Fri! http://bit.ly/shanxo Subscribe for FREE! :)",
 	},
   {
 		_id: uuid(),
@@ -112,7 +99,7 @@ export const videos = [
 		views: viewsFormatter(145000),
     Category:"skincare",
     PublishDate:"27 Mar 2017",
-	desp:"",
+	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
 		_id: uuid(),
@@ -125,7 +112,7 @@ export const videos = [
 		views: viewsFormatter(7093728),
     Category:"makeup",
     PublishDate:"15 Och 2000",
-	desp:"",
+	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
 		_id: uuid(),
@@ -138,7 +125,7 @@ export const videos = [
 		views: viewsFormatter(137000),
     Category:"skincare",
     PublishDate:"20 April 2019",
-	desp:"",
+	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
 		_id: uuid(),
@@ -151,7 +138,7 @@ export const videos = [
 		views: viewsFormatter(580000),
     Category:"hairstyle",
     PublishDate:"20 June 2007",
-	desp:"",
+	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
 		_id: uuid(),
@@ -164,7 +151,7 @@ export const videos = [
 		views: viewsFormatter(137000),
     Category:"skincare",
     PublishDate:"20 April 2019",
-	desp:"",
+	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 
 	},
   {
@@ -178,7 +165,7 @@ export const videos = [
 		views: viewsFormatter(998),
     Category:"makeup",
     PublishDate:"12 Nov 2021",
-	desp:"",
+	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
 		_id: uuid(),
@@ -204,7 +191,7 @@ export const videos = [
 		views: viewsFormatter(500000),
     Category:"makeup",
     PublishDate:"20 April 2019",
-	desp:"",
+	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
 		_id: uuid(),
@@ -217,7 +204,7 @@ export const videos = [
 		views: viewsFormatter(580000),
     Category:"hairstyle",
     PublishDate:"5 Oct 2014",
-	desp:"",
+	desp:"Figuring out what face shape you have can be difficult. This will help you figure that out and discover what haircut will best suit you!",
 	},
 
 ];

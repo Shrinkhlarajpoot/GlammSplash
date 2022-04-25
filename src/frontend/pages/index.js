@@ -6,3 +6,4 @@ export {Login} from "./Auth/Login";
 export {Logout} from "./Auth/Logout";
 export {Signup} from "./Auth/Signup";
 export {SingleVideo} from "./SingleVideo/SingleVideo";
+export {SinglePlaylist} from "./SinglePlaylist/SinglePlaylist";
