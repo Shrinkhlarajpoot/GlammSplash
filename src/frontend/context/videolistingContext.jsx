@@ -10,6 +10,8 @@ const VideoListingProvider = ({ children }) => {
     {
       data: [],
       loading:false,
+      categories:["ALL","Skincare","Makeup","Hairstyle"],
+      selectedCategory:"ALL"
     }
   );
   useEffect(() => {

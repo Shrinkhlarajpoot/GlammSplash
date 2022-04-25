@@ -10,6 +10,7 @@ import {
   ThemeProvider,
   VideoListingProvider,
 } from "./frontend/context";
+import { NotesProvider } from "./frontend/context/notesContext";
 
 // Call make Server
 makeServer();
@@ -21,7 +22,9 @@ ReactDOM.render(
         <VideoListingProvider>
           <AuthProvider>
             <PlaylistProvider>
+              <NotesProvider>
               <App />
+              </NotesProvider>
             </PlaylistProvider>
           </AuthProvider>
         </VideoListingProvider>

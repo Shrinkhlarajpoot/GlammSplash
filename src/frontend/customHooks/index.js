@@ -1,1 +1,2 @@
-export {usePlaylist} from "./usePlaylist"
+export {usePlaylists} from "./usePlaylist"
+export {useNotes} from "./useNotes"

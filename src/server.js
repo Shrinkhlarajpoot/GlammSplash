@@ -38,6 +38,13 @@ import {
   getWatchLaterVideosHandler,
   removeItemFromWatchLaterVideos,
 } from "./backend/controllers/WatchLaterController";
+
+import {
+  editNoteHandler,
+  getNotesHandler,
+  addNoteHandler,
+  deleteNoteHandler,
+} from "./backend/controllers/NotesController";
 export function makeServer({ environment = "development" } = {}) {
   return new Server({
     serializers: {
@@ -53,6 +60,7 @@ export function makeServer({ environment = "development" } = {}) {
       history: Model,
       playlist: Model,
       watchlater: Model,
+      notes:Model,
     },
 
     // Runs on the start of the server
@@ -69,6 +77,7 @@ export function makeServer({ environment = "development" } = {}) {
           watchlater: [],
           history: [],
           playlists: [],
+          notes:[]
         })
       );
     },
@@ -122,6 +131,12 @@ export function makeServer({ environment = "development" } = {}) {
         "/user/playlists/:playlistId/:videoId",
         removeVideoFromPlaylistHandler.bind(this)
       );
+      //notes routes(private)
+
+      this.get("/user/notes/:videoId", getNotesHandler.bind(this));
+      this.post("/user/notes", addNoteHandler.bind(this));
+      this.delete("/user/notes/:noteId", deleteNoteHandler.bind(this));
+      this.post("/user/notes/:noteId", editNoteHandler.bind(this));
 
       // history routes (private)
       this.get("/user/history", getHistoryVideosHandler.bind(this));
@@ -130,6 +145,7 @@ export function makeServer({ environment = "development" } = {}) {
         "/user/history/:videoId",
         removeVideoFromHistoryHandler.bind(this)
       );
+      
       this.delete("/user/history/all", clearHistoryHandler.bind(this));
     },
   });
