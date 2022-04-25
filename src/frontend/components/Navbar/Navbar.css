@@ -1,5 +1,5 @@
 .Navbar_wrapper{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     height:4rem;
     background-color: var(--bg-color);
     display: flex;

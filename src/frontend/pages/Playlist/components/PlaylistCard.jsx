@@ -1,17 +1,31 @@
+import { Link } from "react-router-dom";
+import { usePlaylists } from "../../../customHooks/usePlaylist"
 import "./PlaylistCard.css"
-const PlaylistCard = () => {
+const PlaylistCard = ({playlist}) => {
+  const {deletePlaylist}=usePlaylists();
   return (
+   
     <div className="videocard playlistcard">
+       <Link to={`playlists/${playlist._id}`}>
       <img
         className="videocard_img playlist_img"
-        src="https://i.ytimg.com/vi/EkGOC5gs1ao/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUlYEqcu-x-i5F9KBfQPh7L_S2NQ"
+        src={playlist?.videos[0]?.thumbnail || "./assests/playlist.jpg" }
+      
+        
       ></img>
+        </Link>
       <div className="playlistcard_desp-desp">
-        <h2>Playlist1</h2>
-        <span class="material-icons">delete</span>
+        <h4>{playlist.title}</h4>
+        <span class="material-icons " onClick={(e)=>{
+          e.stopPropagation();
+          deletePlaylist(playlist._id)
+        }}>delete</span>
+      
+         
        </div>
-       <div className="playlistcard_items">5</div>
+       <div className="playlistcard_items">{playlist.videos.length}</div>
     </div>
+  
   );
 };
 export { PlaylistCard };

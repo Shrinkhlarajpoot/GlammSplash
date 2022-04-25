@@ -1,28 +1,72 @@
+import { useNavigate, useParams } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
 import "./VideoCard.css";
-const VideoCard = () => {
+import { PlaylistModal } from "../../../components";
+import { useAuth } from "../../../context";
+const VideoCard = ({ video }) => {
+  const [showPlaylistModal,setShowPlaylistModal] = useState(false);
+  const navigate = useNavigate();
+  const [showMoreOptionsModal, setShowMoreOptionsModal] = useState(false);
+  const videoRef = useRef();
+  const {auth:{token}}=useAuth()
+  useEffect(() => {
+    const closeModal = (e) => {
+      if (
+        showMoreOptionsModal &&
+        videoRef.current &&
+        !videoRef.current.contains(e.target)
+      ) {
+        setShowMoreOptionsModal(false);
+      }
+    };
+  document.addEventListener("mousedown", closeModal);
+
+    return () => document.removeEventListener("mousedown", closeModal);
+  }, [showMoreOptionsModal]);
   return (
-    <div className="videocard">
+    <div className="videocard" ref={videoRef}>
       <img
+        onClick={() => navigate(`/explore/${video.id}`)}
         className="videocard_img"
-        src="https://i.ytimg.com/vi/EkGOC5gs1ao/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUlYEqcu-x-i5F9KBfQPh7L_S2NQ"
+        src={video.thumbnail}
       ></img>
       <div className="videocard_desp">
-        <img
-          className="avatar-sm"
-          src="https://yt3.ggpht.com/qdo5dDiKZPR9VWKRpn4PH2by2llygF1IF60ALOwa8NEptYYaDBUFyLVPJs2e34LJhDowIzy-Qh4=s68-c-k-c0x00ffffff-no-rj"
-        ></img>
+        <img className="avatar-sm" src={video.creatorProfile}></img>
         <div className="videocard_desp-main">
           <div className="videocard_desp-desp">
-          <div className="videocard_desp-title">  10 Makeup Hacks for All the Ladies around the word of this besautiful things laoaoaoaos</div>
-           <div className="videocard_subdesp">
-               <span>1.5M Views</span>
-               <span><li>22 Feb 2021</li></span>
-               <span>Roxsouous</span>
-           </div>
+            <div className="videocard_desp-title">{video.title}</div>
+            <div className="videocard_subdesp">
+              <span>{video.views}</span>
+              <span>
+                <li>{video.PublishDate}</li>
+              </span>
+              <span>{video.creator}</span>
+            </div>
           </div>
         </div>
-        <span class="material-icons">more_vert</span>
+        <span
+          class="material-icons"
+          onClick={() => setShowMoreOptionsModal(!showMoreOptionsModal)}
+        >
+          more_vert
+        </span>
       </div>
+      {showMoreOptionsModal ? (
+        <div className="show_moreoption_modal">
+          <li>
+            <span class="material-icons-round">thumb_up</span>Add to Like Videos
+          </li>
+          <li  onClick={()=>token ?setShowPlaylistModal(true):  navigate("/login")}>
+            <span class="material-icons">create_new_folder</span> Add to
+            Playlist
+          </li>
+          <li>
+         
+            <span class="material-icons"> watch_later </span>Add to Watch Later
+          </li>
+        </div>
+      ) : null}
+       {showPlaylistModal?<PlaylistModal showPlaylistModal={showPlaylistModal} setShowPlaylistModal={setShowPlaylistModal} video={video}/>:null}
     </div>
   );
 };

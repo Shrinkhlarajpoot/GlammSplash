@@ -1,0 +1,35 @@
+.notes{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    height:30rem;
+    padding-top: 1rem;
+  }
+.notes >*{
+    margin:0.4rem;
+   resize: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+.notes_title{
+    padding: 0.3rem;
+    border: 2px solid var(--primary-color);
+}
+.notes_desp{
+    height:10rem;
+    border: 2px solid var(--primary-color);
+
+}
+.notecard{
+    padding: 0 0.4rem  ;
+    height:fit-content;
+    word-break: break-all;
+    border: 1px solid var(--primary-color);
+    margin: 0.5rem 0;
+ 
+}
+.notecard_wrapper{
+    height:15rem;
+    overflow-y: scroll;
+}

@@ -1,8 +1,12 @@
 import "./Explore.css"
-import { Navbar, Sidebar } from "../../components"
+import { Loader, Navbar, Sidebar } from "../../components"
 import { VideoCard } from "./components/VideoCard"
+import { useVideoListing } from "../../context"
+
+
 
 const Explore = ()=>{
+  const{videolistingState:{data,loading}} = useVideoListing()
     return (
         <div>
             <Navbar/>
@@ -16,15 +20,10 @@ const Explore = ()=>{
                     <span>Hairstyles</span>
                 </div>
                 <div className="explore_videos">
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
-                    <VideoCard/>
+                {loading ? <Loader/> : null}
+                    {data?.map((video)=>
+                        <VideoCard video={video} key={video._id}/>
+                    )}
                     
                 </div>
             </div>

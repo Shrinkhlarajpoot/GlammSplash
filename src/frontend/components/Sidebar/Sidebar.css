@@ -4,7 +4,6 @@
   position: sticky;
   left:0;
   top:4rem;
-  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
@@ -23,7 +22,12 @@
   border-radius: 0.3rem;
 }
 .sidebar_wrapper > *:hover {
-  background-color: var(--bg2-color);
+
+    background-color: var(--bg-color);
+}
+.active{
+ border:1px solid var(--primary-color);
+ background-color: var(--bg-color);
 }
 .links{
     text-decoration: none;

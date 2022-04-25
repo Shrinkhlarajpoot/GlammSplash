@@ -1,0 +1,1 @@
+export {viewsFormatter} from "./viewsFormatter"
