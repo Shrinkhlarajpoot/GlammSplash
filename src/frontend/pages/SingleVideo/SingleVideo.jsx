@@ -92,7 +92,7 @@ const SingleVideo = () => {
                 submitFormHandler={submitFormHandler}
               ></NoteInput>
               <div className="notecard_wrapper">
-              {loading?<Loader/>:
+              {token && loading?<Loader/>:
               notes?.map((note)=>
               <NoteCard note={note} key={note._id}/>)}
               </div>

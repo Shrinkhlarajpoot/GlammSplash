@@ -16,8 +16,7 @@ const NotesProvider = ({ children }) => {
 
   const { videoId } = notesState;
   useEffect(() => {
-    token &&
-      videoId &&
+    (token &&videoId) &&
       dispatchNotes({
         type: "SET_LOADING",
         payload: true,
