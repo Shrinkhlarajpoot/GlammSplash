@@ -10,7 +10,7 @@ const Sidebar = () => {
         <NavLink to="/playlist"  className={({ isActive }) => (isActive ? "links  active" : "links")} ><span class="material-icons">create_new_folder</span>Playlist</NavLink>
         <NavLink to="/likevideos" className={({ isActive }) => (isActive ? "links  active" : "links")} > <span class="material-icons">thumb_up</span>Liked Videos</NavLink>
         <NavLink to="/watchlater"  className={({ isActive }) => (isActive ? "links  active" : "links")} >  <span class="material-icons">watch_later</span>Watch Later</NavLink>
-        <NavLink to="/"  className={({ isActive }) => (isActive ? "links  active" : "links")} > <span class="material-icons" >history</span>History</NavLink>
+        <NavLink to="/watchhistory"  className={({ isActive }) => (isActive ? "links  active" : "links")} > <span class="material-icons" >history</span>History</NavLink>
       </div>
   );
 };

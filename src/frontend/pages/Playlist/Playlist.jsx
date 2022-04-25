@@ -27,6 +27,7 @@ const Playlist = () => {
         <Sidebar />
         <div className=" playlist_main_container">
           {showAddPlaylist ? (
+          
             <div className="add_newplaylist_btn">
               <span
                 class="material-icons-round"
@@ -37,7 +38,7 @@ const Playlist = () => {
               Add New Playlist
             </div>
           ) : (
-            <div className="playlist_main_container">
+            
               <form className="add_newplaylist_btn">
                 <span class="material-icons-outlined  addnewplaylist_cancelbtn"  onClick={()=>{
                   setShowAddPlaylist(true)
@@ -60,7 +61,7 @@ const Playlist = () => {
                   <span class="material-icons modal_icon">add_circle</span>
                 </button>
               </form>
-            </div>
+           
           )}
           {playlists?.map((playlist) => (
             <PlaylistCard playlist={playlist} key={playlist._id} />
