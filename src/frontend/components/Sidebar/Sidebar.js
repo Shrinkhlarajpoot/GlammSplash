@@ -6,6 +6,7 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar_wrapper ${themetoggle?"lighttheme":""}`}>
+          <NavLink to="/"  className={({ isActive }) => (isActive ? "links  active" : "links")} ><span class="material-icons">home</span>Home</NavLink>
         <NavLink to="/explore"  className={({ isActive }) => (isActive ? "links  active" : "links")} ><span class="material-icons">explore</span>Explore</NavLink>
         <NavLink to="/playlist"  className={({ isActive }) => (isActive ? "links  active" : "links")} ><span class="material-icons">create_new_folder</span>Playlist</NavLink>
         <NavLink to="/likevideos" className={({ isActive }) => (isActive ? "links  active" : "links")} > <span class="material-icons">thumb_up</span>Liked Videos</NavLink>

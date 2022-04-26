@@ -32,7 +32,6 @@ const Signup = () => {
         console.log(token);
         if (token) {
           localStorage.setItem("token", token);
-
           setAuth({
             token: token,
           });

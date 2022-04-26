@@ -1,25 +1,27 @@
-import { useNavigate } from "react-router-dom";
-import { useAuth, useTheme } from "../../context";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth, useTheme, useVideoListing } from "../../context";
 import "./Navbar.css";
-import { toast } from "react-toastify";
+import { debounce } from "../../utils";
 const Navbar = () => {
   const { themetoggle, toggleThemefunction } = useTheme();
+  const {videolistingDispatch, videolistingState}=useVideoListing()
   const {
     auth: { token },
     setAuth,
   } = useAuth();
-  const navigate = useNavigate();
-  const logoutHandler = () => {
-    localStorage.removeItem("glamm-splashtoken");
-    localStorage.removeItem("glamm-splashuser");
-    toast.success("Logged Out sucessfully");
-    setAuth({
-      token: "",
-      user: "",
-    });
-    navigate("/logout");
-  };
-  return (
+ const navigate = useNavigate();
+  const {pathname}=useLocation()
+  const changeHandler =(e)=>{
+    videolistingDispatch({
+      type:"SET_SEACH_TEXT",
+      payload:{searchedText:e.target.value}
+    })
+    if(pathname!=="/explore"){
+      navigate("/explore")
+    }
+
+  }
+ return (
     <div className={`Navbar_wrapper ${themetoggle ? "lighttheme" : ""}`}>
       <div className="main__logo">
         <span class="material-icons">play_circle_outline</span>
@@ -29,6 +31,7 @@ const Navbar = () => {
         type="text"
         placeholder="search here..."
         className="Navbar_input"
+        onChange={(e)=>debounce(changeHandler(e))}
       ></input>
       <div className="Navbar_lastitems">
         <span
@@ -40,10 +43,10 @@ const Navbar = () => {
 
         <div
           className="nav-account"
-          onClick={() => (token ? logoutHandler() : navigate("/login"))}
+          onClick={() => (token ? navigate("/profile") : navigate("/login"))}
         >
           <span class="material-icons">account_circle</span>
-          <span>{token ? "Logout" : "Login"}</span>
+          <span>{token ? "Profile" : "Login"}</span>
         </div>
       </div>
     </div>

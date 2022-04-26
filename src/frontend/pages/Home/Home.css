@@ -1,0 +1,52 @@
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.heading-home {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.home_content {
+  padding: 1rem;
+  position: absolute;
+  background-color: var(--bg-color);
+  width: 40rem;
+  height: fit-content;
+  text-align: center;
+  color: var(--text-color);
+}
+.desp-home {
+  font-size: 1.2rem;
+  color:var(--primary-color)
+}
+.home-btn {
+  padding: 10px;
+  background-color: var(--bg2-color);
+  width: 40%;
+  margin: 1rem auto;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+.home-btn:hover {
+  background-color: var(--primary-color);
+}
+.homepgae-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  background-color: transparent;
+  color: var(--primary-color);
+}
