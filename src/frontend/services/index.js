@@ -7,3 +7,5 @@ export {
   addVideoToPlaylistService,
   deleteVideoFromPlaylistService,
 } from "./playlistService"
+
+export {getNotesService,addNoteService,deleteNoteService} from "./notesService"
