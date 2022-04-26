@@ -26,7 +26,6 @@ const useWatchlater = () => {
         }
       } catch (error) {
         toast.error("Try Again Later");
-        console.log(error);
       }
     }
   };
@@ -46,7 +45,6 @@ const useWatchlater = () => {
         }
       } catch (error) {
         toast.error("Try Again Later");
-        console.log(error);
       }
     }
   };

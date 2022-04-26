@@ -1,12 +1,10 @@
 import { useContext } from "react";
 import { LikelistContext, useAuth } from "../context";
 import { toast } from "react-toastify";
-import {
-    addLikedVideoService, removeLikedVideoService
-} from "../services";
+import { addLikedVideoService, removeLikedVideoService } from "../services";
 
 const useLikes = () => {
-  const {likesState, dispatchLikes } = useContext(LikelistContext);
+  const { likesState, dispatchLikes } = useContext(LikelistContext);
   const {
     auth: { token },
   } = useAuth();
@@ -14,7 +12,7 @@ const useLikes = () => {
   const addLikeVideo = async ({ token, video }) => {
     if (token) {
       try {
-        const { data, status } = await  addLikedVideoService({ token, video });
+        const { data, status } = await addLikedVideoService({ token, video });
         if (status === 201) {
           toast.success("Added to Likes");
           dispatchLikes({
@@ -24,7 +22,6 @@ const useLikes = () => {
         }
       } catch (error) {
         toast.error("Try Again Later");
-        console.log(error);
       }
     }
   };
@@ -44,7 +41,6 @@ const useLikes = () => {
         }
       } catch (error) {
         toast.error("Try Again Later");
-        console.log(error);
       }
     }
   };

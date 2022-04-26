@@ -25,9 +25,7 @@ const useHistory = () => {
             payload: { watchHistory: data.history },
           });
         }
-      } catch (error) {
-        console.log(error);
-      }
+      } catch (error) {}
     }
   };
   const deleteFromWatchHistory = async ({ video, token }) => {
@@ -46,7 +44,6 @@ const useHistory = () => {
         }
       } catch (error) {
         toast.error("Try Again Later");
-        console.log(error);
       }
     }
   };
@@ -56,7 +53,7 @@ const useHistory = () => {
         const { data, status } = await clearWatchHistoryService({ token });
 
         if (status === 200) {
-            toast.info("History Deleted");
+          toast.info("History Deleted");
           dispatchWatchHistory({
             type: "SET_WATCHHISTORY",
             payload: { watchHistory: data.history },
@@ -64,7 +61,6 @@ const useHistory = () => {
         }
       } catch (error) {
         toast.info("Try Again Later");
-        console.log(error);
       }
     }
   };

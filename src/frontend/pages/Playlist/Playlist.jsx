@@ -68,12 +68,7 @@ const Playlist = () => {
           ))}
         </div>
       </div>
-      {/* {showPlaylistModal ? (
-        <PlaylistModal
-          showPlaylistModal={showPlaylistModal}
-          setShowPlaylistModal={setShowPlaylistModal}
-        />
-      ) : null} */}
+    
     </div>
   );
 };
