@@ -33,7 +33,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLRyVpJqhqwdd-Adqjp4yBFyNyCqzAMxkn8D-QTb=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(39000),
     Category:"hairstyle",
-    PublishDate:"5 Oct 2015",
+    PublishDate:"Oct 5 2015",
 	desp:"Jessica starts the tutorial with a beach wave in her hair for texture. Gather hair into a loose low ponytail using a thin hair tie. Pull the roots out of the ponytail to make it bigger. Take small pieces of hair by the face out of the ponytail to help frame the face. Using a piece of hair from below the ponytail, wrap the hair around the elastic to cover it up. Add finishing touches to the low ponytail using the Light Elements Defining Whip to give it that messy look.",
 	},
   {
@@ -46,7 +46,7 @@ export const videos = [
 			"https://yt3.ggpht.com/61jYa46KdQDqBJnqz8kWnXunhPlznCZDzoSflcx0ym2w4qTI5Yw8VbD7HppbBKneMt_Tw5sOKA=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(1500000),
     Category:"makeup",
-    PublishDate:"2 March 2020",
+    PublishDate:"March 2 2020",
 	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
@@ -59,9 +59,10 @@ export const videos = [
 			"https://yt3.ggpht.com/qWvsOjGeUOhU9kC1qF_-zcjSlg2sIxi32OfJBnDw8EvTvZr0pXR67B7gXrmk-kfg2_V66Cg7Sw=s68-c-k-c0x00ffffff-no-rj",
 		views:viewsFormatter(107380),
     Category:"makeup",
-    PublishDate:"1 Feb 2016",
+    PublishDate:"Feb 1 2016",
 	desp:"Welcome to my SMOKEY EYE Series!!!!Here's tutorial 1 from my smokey eye series which is a super easy, affordable, sexy, sultry, feline smokey eye. I find this super easy and it works with a lot of looks and outfits! Do try it out and let me know how it went!",
 	},
+	
   {
 		_id: uuid(),
 		title: "Simple and cute hairstyle for everyday",
@@ -72,7 +73,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLSC1Pc-1Lmh4-AS8jQkRQoaECYfBcFqeme_xXY2jA=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(56000),
     Category:"hairstyle",
-    PublishDate:"10 Sep 2011",
+    PublishDate:"Sep 10 2011",
 	desp:"Hi guys welcome back to my channel ❤️ I know I uploaded this video after here's are some sexy hairstyle you can try and enchance your collge looks.❤️",
 	},
   {
@@ -85,7 +86,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLQ29u6uM4CzIxqL7iemhBQVRjDaVhJchqfHpTFctw=s88-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(158580),
     Category:"makeup",
-    PublishDate:"20 Dec 2011",
+    PublishDate:"Dec 20 2011",
 	desp:"Today i'm doing a makeup tutorial inspired by INSTAGRAM BADDIES! I even cream contoured haha using my kit from http://www.iconiclondoninc.com/ xx- GIANT KOREAN BEAUTY HAUL https://www.youtube.com/watch?v=ODxJC...- MOST FUN EVER https://www.youtube.com/watch?v=JBila...- New videos every Mon, Wed and Fri! http://bit.ly/shanxo Subscribe for FREE! :)",
 	},
   {
@@ -98,7 +99,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLSC1Pc-1Lmh4-AS8jQkRQoaECYfBcFqeme_xXY2jA=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(145000),
     Category:"skincare",
-    PublishDate:"27 Mar 2017",
+    PublishDate:"Mar 27 2017",
 	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
@@ -111,7 +112,7 @@ export const videos = [
 			"	https://yt3.ggpht.com/ytc/AKedOLS39WTYrWDJBlqf3L5IFhazrDv5mwiY-D7NUTo_cg=s88-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(7093728),
     Category:"makeup",
-    PublishDate:"15 Och 2000",
+    PublishDate:"Oct 15 2000",
 	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
@@ -124,7 +125,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLTFl8kpVaRWk1oPO4ilOTP0C3SvdZ2gorjsMkaf=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(137000),
     Category:"skincare",
-    PublishDate:"20 April 2019",
+    PublishDate:"April 20 2019",
 	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
@@ -137,7 +138,7 @@ export const videos = [
     "https://yt3.ggpht.com/ytc/AKedOLRDabnuXL0w8SFE4dhY3OMPHdEdlBT_WrlA4n4eno4=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(580000),
     Category:"hairstyle",
-    PublishDate:"20 June 2007",
+    PublishDate:"June 20 2007",
 	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 	},
   {
@@ -150,7 +151,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLRDabnuXL0w8SFE4dhY3OMPHdEdlBT_WrlA4n4eno4=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(137000),
     Category:"skincare",
-    PublishDate:"20 April 2019",
+    PublishDate:"April 20 2019",
 	desp:"Skincare doesn't have to be complicated. Sometimes all it takes is making a few small and easy changes to your skincare routine to see a BIG difference in your skin. Whether you're dealing with clogged pores, acne, dry skin, oily skin, or something else, you'll be sure to see results if you apply some of these easy skincare tips. What are some of your favorite skincare tips? Share in the comments!",
 
 	},
@@ -164,7 +165,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLTh3CzVjywnuL9xsr13NtrbPs0-17AHUvhtmnmQ6G4=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(998),
     Category:"makeup",
-    PublishDate:"12 Nov 2021",
+    PublishDate:"Nov 20 2021",
 	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
@@ -177,7 +178,7 @@ export const videos = [
 			"https://yt3.ggpht.com/ytc/AKedOLQej2xd6sAkQA5BEC3XCzC6unJivtDJAOZrX350=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(998908),
     Category:"skincare",
-    PublishDate:"5 Oct 2018",
+    PublishDate:"Oct 15 2018",
 	 desp:"",
 	},
   {
@@ -190,7 +191,7 @@ export const videos = [
 			"	https://yt3.ggpht.com/ytc/AKedOLTJa17prUeB_CrtukXXuhYESj6GENQIxLtFiUJZew=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(500000),
     Category:"makeup",
-    PublishDate:"20 April 2019",
+    PublishDate:"April 20 2019",
 	desp:"If you’re an avid bruncher, you know that the act of going to brunch is more than just a special occasion – it’s a lifestyle, and it’s a time to make a statement with how you look from head to toe. The key to a beautiful brunch beauty look is about creating effortless looking, sun-kissed glow! Actress Janhvi Kapoor shows us a fresh-faced, minimal makeup look because it’s simple, quick and pretty without looking overdone",
 	},
   {
@@ -203,7 +204,7 @@ export const videos = [
 			"	https://yt3.ggpht.com/ytc/AKedOLQIOQBUbHr5hBW1cgbrV5G9pydwmoyCBF_LL9n7CA=s68-c-k-c0x00ffffff-no-rj",
 		views: viewsFormatter(580000),
     Category:"hairstyle",
-    PublishDate:"5 Oct 2014",
+    PublishDate:"Oct 14 2014",
 	desp:"Figuring out what face shape you have can be difficult. This will help you figure that out and discover what haircut will best suit you!",
 	},
 

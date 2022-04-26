@@ -6,13 +6,18 @@ import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./frontend/context/authContext";
 import {
+  LikelistProvider,
   PlaylistProvider,
   ThemeProvider,
   VideoListingProvider,
-} from "./frontend/context";
-import { NotesProvider } from "./frontend/context/notesContext";
+  NotesProvider,
+  WatchlaterProvider,
+  WatchHistoryProvider
 
-// Call make Server
+} from "./frontend/context";
+
+
+
 makeServer();
 
 ReactDOM.render(
@@ -22,9 +27,15 @@ ReactDOM.render(
         <VideoListingProvider>
           <AuthProvider>
             <PlaylistProvider>
+              <WatchlaterProvider>
+                <LikelistProvider>
+                  <WatchHistoryProvider>
               <NotesProvider>
               <App />
               </NotesProvider>
+              </WatchHistoryProvider>
+              </LikelistProvider>
+              </WatchlaterProvider>
             </PlaylistProvider>
           </AuthProvider>
         </VideoListingProvider>

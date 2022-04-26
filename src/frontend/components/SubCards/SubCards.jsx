@@ -1,11 +1,14 @@
 import { useNavigate, useParams } from "react-router-dom";
+import { useWatchlater } from "../../customHooks";
 import { usePlaylists } from "../../customHooks/usePlaylist";
-// import { useState, useRef, useEffect } from "react";
 import "./SubCards.css";
 
 const SubCards = ({video,currentPlaylist}) => {
 const navigate = useNavigate();
-const {deleteVideoFromPlaylist}= usePlaylists()
+const {deleteVideoFromPlaylist}= usePlaylists();
+const {watchlaterState:{watchLater}}=useWatchlater();
+
+const videoInWatchLater = watchLater.find((video1)=>video1._id===video._id)
           
 return (
     <div className="subcard">
@@ -15,7 +18,6 @@ return (
         src={video.thumbnail}
       ></img>
       <div className="videocard_desp">
-        {/* <img className="avatar-sm" src={video.creatorProfile}></img> */}
         <div className="videocard_desp-main">
           <div className="videocard_desp-desp subcard__desp">
             <div className="videocard_desp-title ">{video.title}</div>
