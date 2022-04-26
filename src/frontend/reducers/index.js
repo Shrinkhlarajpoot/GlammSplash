@@ -1,3 +1,6 @@
 export {videolistingReducerFun} from "./videolistingReducer"
 export {playListReduceFunc} from "./playlistReducer"
 export {notesReduceFunc} from "./notesReducer"
+export {watchlaterReducerFun} from "./watchlaterReducer"
+export {likeReducerFun} from "./likeReducer"
+export {watchHistoryReducerFun} from "./watchHistoryReducer"
