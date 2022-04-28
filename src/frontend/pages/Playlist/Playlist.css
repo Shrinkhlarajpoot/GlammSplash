@@ -27,13 +27,30 @@
   cursor: pointer;
 }
 .playlist_main_container{
-  padding:0 0 0 5rem;
-    display: flex;
+  width: 100%;
+ display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 2rem 1rem 0 0.2rem;
+    align-content: flex-start;
 }
 .addnewplaylist_cancelbtn{
   position: absolute;
   right:1rem;
   top:2rem;
 }
+.playlist-wrapper{
+  justify-content: space-around;
+}
+
+ @media screen and (max-width:808px){
+  .add_newplaylist_btn{
+    width:85%;
+  }
+   
+ }
+ @media screen and (max-width: 632px) {
+   .playlist-wrapper{
+     padding-top: 2rem;
+   }
+  }

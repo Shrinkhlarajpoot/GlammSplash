@@ -23,7 +23,7 @@ const Playlist = () => {
   return (
     <div>
       <Navbar />
-      <div className="explore_wrapper">
+      <div className="explore_wrapper playlist-wrapper">
         <Sidebar />
         <div className=" playlist_main_container">
           {showAddPlaylist ? (

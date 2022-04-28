@@ -1,10 +1,10 @@
 .likes_main_container{
-    padding:0 0 0 5rem;
     display: flex;
     flex-wrap: wrap;
     margin: 2rem 1rem 0 0.2rem;
     width: 100%;
     align-content: flex-start;
+    justify-content: space-around;
 }
 .empty_container-heading{
     width: 85%;
@@ -21,4 +21,17 @@
     z-index:3;
     cursor: pointer;
     margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--primary-color);
 }
+@media screen and (max-width: 632px) {
+    .likes_main_container{
+        margin: 4rem 1rem 0 0.2rem;
+    }
+    .clear_watchhistory{
+       top:7.5rem;
+        right:2rem;
+        margin-bottom: 1rem;
+       
+    }
+    }
+   

@@ -18,7 +18,7 @@ const Profile = () => {
     navigate("/logout");
   };
   return (
-    <>
+    <div className="explore_wrapper">
       <div className="profile_page ">
         <i
           className="fa fa-close close "
@@ -47,7 +47,7 @@ const Profile = () => {
           Logout
         </button>
       </div>
-    </>
+   </div>
   );
 };
 export { Profile };

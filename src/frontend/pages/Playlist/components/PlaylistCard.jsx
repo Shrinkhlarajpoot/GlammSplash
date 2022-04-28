@@ -5,10 +5,10 @@ const PlaylistCard = ({playlist}) => {
   const {deletePlaylist}=usePlaylists();
   return (
    
-    <div className="videocard playlistcard">
+    <div className=" videocard playlistcard">
        <Link to={`playlists/${playlist._id}`}>
       <img
-        className="videocard_img playlist_img"
+        className=" playlist_img"
         src={playlist?.videos[0]?.thumbnail || "./assests/playlist.jpg" }
       
         
@@ -16,7 +16,7 @@ const PlaylistCard = ({playlist}) => {
         </Link>
       <div className="playlistcard_desp-desp">
         <h4>{playlist.title}</h4>
-        <span class="material-icons " onClick={(e)=>{
+        <span class="material-icons delete_playlist " onClick={(e)=>{
           e.stopPropagation();
           deletePlaylist(playlist._id)
         }}>delete</span>
