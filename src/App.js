@@ -8,7 +8,7 @@ function App() {
 const{themetoggle} =useTheme()
   return (
     <div  className={`App ${themetoggle?"lighttheme":""}`}>
-      <ToastContainer autoClose={1500} position="bottom-right" />
+      <ToastContainer autoClose={700} position="top-right" />
       <Pageroutes />
     </div>
   );
