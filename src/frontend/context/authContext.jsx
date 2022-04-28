@@ -3,11 +3,17 @@ const Authcontext = createContext();
 const useAuth = () => useContext(Authcontext);
 const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState({
-    token: localStorage.getItem("glamm-splashtoken") || "",
-    user:localStorage.getItem("glamm-splashuser") || "",
+    token:localStorage.getItem("glamm-splashtoken"||""),
+    user:JSON.parse(localStorage.getItem("glamm-splashuser" ||""))
   });
+  useEffect(()=>{
+    setAuth({...auth,
+      token:localStorage.getItem("glamm-splashtoken"||""),
+      user:JSON.parse(localStorage.getItem("glamm-splashuser" ||""))
+    })
 
-  const [showpassword, setShowPassword] = useState(false);
+  },[auth.token])
+ const [showpassword, setShowPassword] = useState(false);
 
   return (
     <Authcontext.Provider

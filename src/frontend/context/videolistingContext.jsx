@@ -9,16 +9,16 @@ const VideoListingProvider = ({ children }) => {
     videolistingReducerFun,
     {
       data: [],
-      loading:false,
-      categories:["ALL","Skincare","Makeup","Hairstyle"],
-      selectedCategory:"ALL"
+      loading: false,
+      categories: ["ALL", "Skincare", "Makeup", "Hairstyle"],
+      selectedCategory: "ALL",
+      searchedText: "",
+      sortBy: "",
     }
   );
   useEffect(() => {
-    
     (async () => {
-
-      videolistingDispatch({type:"SET_LOADING",payload:{loading:true}})
+      videolistingDispatch({ type: "SET_LOADING", payload: { loading: true } });
       try {
         const { status, data } = await getVideoListingService();
         if (status === 200) {
@@ -26,7 +26,7 @@ const VideoListingProvider = ({ children }) => {
             type: "LOAD_INITIAL_DATA",
             payload: {
               data: data.videos,
-              loading:false,
+              loading: false,
             },
           });
         }

@@ -11,7 +11,7 @@ const Logout = () => {
         <i
           className="fa fa-close"
           id="close"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/explore")}
         ></i>
        
         <h3>
@@ -19,8 +19,8 @@ const Logout = () => {
          
         </h3>
         <div className="auth__box-sub">
-          <Link to="/" className="Link_style">
-          <button className="sub__main2">Go Back To Home Page</button>
+          <Link to="/explore" className="Link_style">
+          <button className="sub__main2">Go Back To Explore Page</button>
           </Link>
          
         </div>

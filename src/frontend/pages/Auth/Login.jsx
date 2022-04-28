@@ -19,21 +19,18 @@ const Login = () => {
     (async () => {
       if (submit && Object.values(errors).length === 0) {
         const token = await loginService(loginform.email, loginform.password);
-
-        if (token) {
-          console.log(token.data.encodedToken);
+        if (token.data) {
           localStorage.setItem("glamm-splashtoken", token.data.encodedToken);
           localStorage.setItem(
             "glamm-splashuser",
-            token.data.foundUser.firstName
+            JSON.stringify(token.data.foundUser)
           );
-
           setAuth({
             token: token.data.encodedToken,
-            user: token.data.foundUser.firstName,
+            user: { user: token.data.foundUser },
           });
 
-          navigate("/");
+          navigate("/explore");
         }
       }
     })();
