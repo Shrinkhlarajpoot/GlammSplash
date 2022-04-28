@@ -26,7 +26,7 @@ export const videos = [
   {
 		_id: uuid(),
 		title: "How to do messy voluminious low ponytail| Simple and easy",
-		creator: "Hairstyle beauty school",
+		creator: "Beauty school",
 		thumbnail: "https://i.ytimg.com/vi/FPXcu43sFPI/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBeH-C5L6i_uaSnK-MJZ33JNZYGNA",
 		src: "https://www.youtube.com/embed/FPXcu43sFPI",
 		creatorProfile:
