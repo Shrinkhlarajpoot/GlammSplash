@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useAuth } from "../context";
 import { PlaylistContext } from "../context/playlistContext";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import {
   addNewPlaylistService,
   addVideoToPlaylistService,
@@ -72,7 +72,7 @@ const usePlaylists = () => {
         });
 
         if (status === 200) {
-          toast.info("Video Deleted from the Playlist");
+          toast.success("Video Deleted from the Playlist");
           dispatchPlaylists({
             type: "DELETE_VIDEO_FROM_PLAYLIST",
             payload: { playlist: data.playlist },

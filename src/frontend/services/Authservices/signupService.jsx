@@ -1,5 +1,5 @@
 import axios from "axios";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 const signupService = async (firstname, lastname, email, password) => {
   console.log(firstname, lastname, email, password);
@@ -11,7 +11,12 @@ const signupService = async (firstname, lastname, email, password) => {
       password: password,
     });
    if (res.status === 201) {
-      toast.success("SignUp sucessfully..Please Login to Continue");
+toast.success(
+      `Welcome to Glamm Splash!`,
+      {
+        icon: "👋",
+      }
+    );
       return res.data.encodedToken;
     }
   } catch (error) {

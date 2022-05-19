@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useAuth } from "../context";
 import { WatchlaterContext } from "../context/watchlaterContext";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import {
   addToWatchLaterService,
   removeFromWatchLaterService,

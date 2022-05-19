@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useAuth, WatchHistoryContext } from "../context";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import {
   addToHistoryService,
   removeFromHistoryService,
@@ -53,14 +53,14 @@ const useHistory = () => {
         const { data, status } = await clearWatchHistoryService({ token });
 
         if (status === 200) {
-          toast.info("History Deleted");
+         toast.success("History Deleted");
           dispatchWatchHistory({
             type: "SET_WATCHHISTORY",
             payload: { watchHistory: data.history },
           });
         }
       } catch (error) {
-        toast.info("Try Again Later");
+        toast.success("Try Again Later");
       }
     }
   };

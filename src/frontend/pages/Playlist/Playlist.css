@@ -11,6 +11,7 @@
   flex-direction: column;
   padding: 2rem;
   position: relative;
+  
      
 }
 
@@ -46,6 +47,7 @@
  @media screen and (max-width:808px){
   .add_newplaylist_btn{
     width:85%;
+    margin-top: 4rem;
   }
    
  }
