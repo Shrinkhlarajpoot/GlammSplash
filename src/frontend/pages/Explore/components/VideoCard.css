@@ -98,6 +98,12 @@
     width: 980%;
     height: 18rem;
   }
+  .videocard_subdesp{
+    margin-top:0.5rem;
+  }
+  .videocard_subdesp>*{
+    margin-top:0.3rem;
+  }
   .videocard_img {
     height: 11rem;
   }
