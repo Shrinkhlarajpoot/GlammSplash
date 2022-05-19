@@ -1,50 +1,61 @@
-.Navbar_wrapper{
-    /* min-width: 100vw; */
-    height:4rem;
-    background-color: var(--bg-color);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: space-between;
-    padding:0 2rem;
-    position: sticky;
-    left:0;
-    top:0;
-    z-index: 2;
-
+.Navbar_wrapper {
+  /* min-width: 100vw; */
+  height: 4rem;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
-.main__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-size:1.4rem;
-    color:var(--primary-color)
-}
-.Navbar_input{
-    padding:0 0.5rem;
-    width:40%;
-    height:2rem;
-    border:1px solid var(--primary-color);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin:0 0.5rem;
-
-}
-.Navbar_lastitems{
-    display: flex;
-    align-items: center;
-   
-}
-.light_mode-btn{
-  padding:0 1rem 0 0;
+.main__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--primary-color);
   cursor: pointer;
 }
-.nav-account{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:2rem;
-    font-size:1rem;
-    color:var(--primary-color)
+.Navbar_input {
+  padding: 0 0.5rem;
+  width: 40%;
+  height: 2rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0 0.5rem;
+}
+.Navbar_lastitems {
+  display: flex;
+  align-items: center;
+}
+.light_mode-btn {
+  padding: 0 1rem 0 0;
+  cursor: pointer;
+}
+.nav-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+@media screen and (max-width: 632px) {
+  .Navbar_input {
+    position: absolute;
+    top: 4rem;
+    width:90%;
+    padding: 1.4rem 0.4rem;
+  
+  }
+  .Navbar_wrapper {
+    padding: 0 1rem;
+ 
+  }
 }

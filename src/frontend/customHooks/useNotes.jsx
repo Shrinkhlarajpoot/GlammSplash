@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useAuth } from "../context";
 import { NotesContext } from "../context/notesContext";
 import { addNoteService, deleteNoteService } from "../services";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import { editNoteService } from "../services/notesService";
 const useNotes = () => {
   const { notesState, dispatchNotes } = useContext(NotesContext);

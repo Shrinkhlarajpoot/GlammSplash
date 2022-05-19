@@ -21,14 +21,14 @@
   padding: 1rem;
   position: absolute;
   background-color: var(--bg-color);
-  width: 40rem;
+  width: 70%;
   height: fit-content;
   text-align: center;
   color: var(--text-color);
 }
 .desp-home {
   font-size: 1.2rem;
-  color:var(--primary-color)
+  color: var(--primary-color);
 }
 .home-btn {
   padding: 10px;
@@ -49,4 +49,13 @@
   font-size: 2rem;
   background-color: transparent;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 784px) {
+  .home_content {
+    width: 90%;
+  }
+  .homepgae-toggle {
+    right: 1rem;
+  }
 }

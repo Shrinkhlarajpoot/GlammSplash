@@ -4,6 +4,7 @@ import { Loader, Navbar, PlaylistModal, Sidebar } from "../../components";
 import { NoteCard } from "./components/NoteCard";
 import { useParams } from "react-router-dom";
 import { useAuth, useVideoListing } from "../../context";
+import ReactPlayer from "react-player";
 import {
   useHistory,
   useLikes,
@@ -39,11 +40,11 @@ const SingleVideo = () => {
     videolistingState: { data },
   } = useVideoListing();
   const { addtoWatchHistory } = useHistory();
-  const video = videolistingState.data.find((video1) => video1.id === videoId);
+  const video = videolistingState.data.find((video1) => video1?.id === videoId);
   const videoInWatchLater = watchLater.find(
     (video1) => video1._id === video._id
   );
-  const videoInLikes = Likeslist.find((video1) => video1._id === video._id);
+  const videoInLikes = Likeslist.find((video1) => video1?._id === video?._id);
 
   const selectedSingleVideo = data.find((item) => item.id === videoId);
   const submitFormHandler = (e) => {
@@ -69,16 +70,7 @@ const SingleVideo = () => {
         <div className="explore_main_container">
           <div className="single_video_conatiner">
             <div>
-              <iframe
-                width="100%"
-                src={selectedSingleVideo?.src}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullscreen
-                loading="lazy"
-                className="video-player"
-              ></iframe>
+              <ReactPlayer playing width="100%" height="25rem" controls={true} url={selectedSingleVideo?.src}  />
               <h3>{selectedSingleVideo?.title}</h3>
               <h5 className="single_product-owner">
                 <img

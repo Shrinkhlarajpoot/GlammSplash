@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LikelistContext, useAuth } from "../context";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import { addLikedVideoService, removeLikedVideoService } from "../services";
 
 const useLikes = () => {

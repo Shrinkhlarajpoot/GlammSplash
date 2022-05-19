@@ -1,9 +1,15 @@
 .watch_later_container{
-    padding:0 0 0 5rem;
     display: flex;
     flex-wrap: wrap;
     margin: 2rem 1rem 0 0.2rem;
     width: 100%;
     align-content: flex-start;
+    justify-content: space-around;
 
 }
+
+@media screen and (max-width: 632px) {
+    .watch_later_container{
+        margin: 4rem 1rem 0 0.2rem;
+    }
+    }

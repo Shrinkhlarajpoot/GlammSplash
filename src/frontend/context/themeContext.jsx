@@ -5,7 +5,6 @@ const ThemeProvider=({children})=>{
      const[themetoggle,setThemeToggle] = useState (JSON.parse(localStorage.getItem("glammsplash_theme")||false))
      const toggleThemefunction = ()=> {
         setThemeToggle((themetoggle)=>!themetoggle);
-        console.log(themetoggle)
         localStorage.setItem("glammsplash_theme",JSON.stringify(themetoggle?false:true))
 }
  return (

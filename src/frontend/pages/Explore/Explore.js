@@ -52,6 +52,8 @@ const Explore = () => {
           </div>
           <div className="explore_videos">
             {loading ? <Loader /> : null}
+           
+              
             {selectedVideoList?.map((video) => (
               <VideoCard video={video} key={video._id} />
             ))}
@@ -75,6 +77,7 @@ const Explore = () => {
           toggleLatestPalette={toggleLatestPalette}
         />
       ) : null}
+        
     </div>
   );
 };

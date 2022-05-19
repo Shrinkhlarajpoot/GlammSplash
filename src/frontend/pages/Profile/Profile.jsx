@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 import { useAuth } from "../../context";
 import "./Profile.css";
@@ -18,7 +18,7 @@ const Profile = () => {
     navigate("/logout");
   };
   return (
-    <>
+    <div className="explore_wrapper">
       <div className="profile_page ">
         <i
           className="fa fa-close close "
@@ -47,7 +47,7 @@ const Profile = () => {
           Logout
         </button>
       </div>
-    </>
+   </div>
   );
 };
 export { Profile };

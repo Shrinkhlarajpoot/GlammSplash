@@ -23,7 +23,7 @@ const Navbar = () => {
   }
  return (
     <div className={`Navbar_wrapper ${themetoggle ? "lighttheme" : ""}`}>
-      <div className="main__logo">
+      <div className="main__logo" role="button" onClick={()=>navigate("/")}>
         <span class="material-icons">play_circle_outline</span>
         GLAMM-SPLASH
       </div>

@@ -41,3 +41,19 @@
     line-height:1.3rem;
    padding-bottom: 2rem;
 }
+
+@media screen and (max-width:1223px) {
+    .single_video_conatiner{
+        display:grid;
+          grid-template-columns:1fr;
+          grid-template-rows: auto;
+          padding:0 0rem 0 0.5rem;
+       }
+    
+}
+@media screen and (max-width:632px) {
+    .single_video_conatiner{
+       margin-top: 5rem;
+       }
+    
+}
