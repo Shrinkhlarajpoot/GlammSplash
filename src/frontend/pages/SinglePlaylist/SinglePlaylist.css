@@ -4,10 +4,11 @@
     align-content: flex-start;
 }
 .heading_for_emptypage2{
-       width: 100%;
-       color:var(--text-color);
-       margin: 2rem auto;
-      font-size: 1.2rem;
+    color:var(--text-color);
+     margin: 2rem auto;
+     font-size: 1.2rem;
+     display: flex;
+     justify-items: center;
 }
 .heading_for_emptypage{
     color:var(--text-color);
@@ -26,6 +27,13 @@
     .single_playlist_container{
      padding:0 0 0 0rem;
    
+    }
+}
+@media screen and (max-width:397px){
+    .heading_for_emptypage{
+        margin:2rem 0 1rem 1rem;
+        padding: 0 0 0 0 ;
+
     }
 }
      
