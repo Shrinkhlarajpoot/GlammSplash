@@ -2,6 +2,11 @@
 ## Description
 GlammSplash is a video library whose theme is based on makeup tutorials.
 It is mobile responsive and have used madeui component library for components.
+## How to run Loacally
++ git clone https://github.com/Shrinkhlarajpoot/GlammSplash.git
++ cd glammsplash
++ npm install
++ npm start
 
 ## Features
 + Authentication-Login,Signin,Logout
