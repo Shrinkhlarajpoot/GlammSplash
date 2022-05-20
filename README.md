@@ -23,4 +23,4 @@ It is mobile responsive and have used madeui component library for components.
 
 ## PREVIEW
 
-![GlammSplash](https://res.cloudinary.com/ds6cgk1wy/image/upload/v1653072600/Matrix%20images/rgqdqbqzb135dsohqnvl.gif)
+![GlammSplash](https://res.cloudinary.com/ds6cgk1wy/image/upload/v1653072851/Matrix%20images/c3vlwqwcupmzqly6tzgx.gif)
