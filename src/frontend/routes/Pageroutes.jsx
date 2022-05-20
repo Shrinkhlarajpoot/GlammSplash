@@ -13,6 +13,7 @@ import {
   WatchHistory,
   WatchLater,
   Home,
+  NotFound,
 } from "../pages";
 
 import { PrivateRoute } from "./Privateroutes";
@@ -22,6 +23,7 @@ const Pageroutes = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound/>} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/explore/:videoId" element={<SingleVideo />} />
         <Route path="/login" element={<Login />} />
