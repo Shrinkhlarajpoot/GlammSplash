@@ -1,5 +1,6 @@
 #  🔗[GLAMM-SPLASH](https://glamsplash.netlify.app/)
 
+![Glamm](/public/assests/fevicon.png)
 ## Description
 GlammSplash is a video library whose theme is based on makeup tutorials.
 It is mobile responsive and have used madeui component library for components.
