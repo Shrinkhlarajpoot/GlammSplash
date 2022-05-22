@@ -36,6 +36,7 @@ const usePlaylists = () => {
             video,
           });
       } catch (err) {
+        console.error(err)
         toast.error("PLease Login To Continue");
       }
     }
@@ -57,6 +58,7 @@ const usePlaylists = () => {
           });
         }
       } catch (err) {
+        console.error(err)
         toast.error("No Video to Add");
       }
     }
@@ -79,6 +81,7 @@ const usePlaylists = () => {
           });
         }
       } catch (err) {
+        console.error(err)
         toast.error("Try Again Later");
       }
     }
@@ -99,6 +102,7 @@ const usePlaylists = () => {
           });
         }
       } catch (err) {
+        console.error(err)
         toast.error("Try Again Later");
       }
     }
