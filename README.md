@@ -1,9 +1,12 @@
 #  🔗[GLAMM-SPLASH](https://glamsplash.netlify.app/)
-
-![Glamm](/public/assests/fevicon.png)
 ## Description
 GlammSplash is a video library whose theme is based on makeup tutorials.
 It is mobile responsive and have used madeui component library for components.
+## How to run Loacally
++ git clone https://github.com/Shrinkhlarajpoot/GlammSplash.git
++ cd glammsplash
++ npm install
++ npm start
 
 ## Features
 + Authentication-Login,Signin,Logout
@@ -25,4 +28,4 @@ It is mobile responsive and have used madeui component library for components.
 
 ## PREVIEW
 
-![GlammSplash](https://res.cloudinary.com/ds6cgk1wy/image/upload/v1653070161/Matrix%20images/xg9nmdawyjoomfjacve9.gif)
+![GlammSplash](https://res.cloudinary.com/ds6cgk1wy/image/upload/v1653072851/Matrix%20images/c3vlwqwcupmzqly6tzgx.gif)
