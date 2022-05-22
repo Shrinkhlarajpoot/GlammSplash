@@ -24,6 +24,7 @@ const useNotes = () => {
           });
         }
       } catch (error) {
+        console.error(error)
         toast.error("Try Again Later");
       }
     }
