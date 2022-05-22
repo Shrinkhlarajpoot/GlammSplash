@@ -48,21 +48,21 @@ const VideoCard = ({ video }) => {
   return (
     <div className="videocard" ref={videoRef}>
       <img
-        onClick={() => navigate(`/explore/${video.id}`)}
+        onClick={() => navigate(`/explore/${video?.id}`)}
         className="videocard_img"
-        src={video.thumbnail}
+        src={video?.thumbnail}
       ></img>
       <div className="videocard_desp">
-        <img className="avatar-sm" src={video.creatorProfile}></img>
+        <img className="avatar-sm" src={video?.creatorProfile}></img>
         <div className="videocard_desp-main">
           <div className="videocard_desp-desp">
-            <div className="videocard_desp-title">{video.title}</div>
+            <div className="videocard_desp-title">{video?.title}</div>
             <div className="videocard_subdesp">
-              <span>{video.views}</span>
+              <span>{video?.views}</span>
               <span>
-                <li>{video.PublishDate}</li>
+                <li>{video?.PublishDate}</li>
               </span>
-              <span>{video.creator}</span>
+              <span>{video?.creator}</span>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ const VideoCard = ({ video }) => {
                   : navigate("/login")
               }
             >
-              <span class="material-icons-round">
+              <span class="material-icons">
                 {videoInLikes ? "thumb_down" : "thumb_up"}
               </span>
               {videoInLikes ? "Remove from LikeVideo" : "Add to LikeVideo"}
