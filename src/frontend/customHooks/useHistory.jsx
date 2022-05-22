@@ -25,7 +25,9 @@ const useHistory = () => {
             payload: { watchHistory: data.history },
           });
         }
-      } catch (error) {}
+      } catch (error) {
+        console.error(error)
+      }
     }
   };
   const deleteFromWatchHistory = async ({ video, token }) => {
@@ -43,6 +45,7 @@ const useHistory = () => {
           });
         }
       } catch (error) {
+        console.error(error)
         toast.error("Try Again Later");
       }
     }
@@ -60,6 +63,7 @@ const useHistory = () => {
           });
         }
       } catch (error) {
+        console.error(error)
         toast.success("Try Again Later");
       }
     }
