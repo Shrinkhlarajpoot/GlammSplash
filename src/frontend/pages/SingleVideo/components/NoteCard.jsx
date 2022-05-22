@@ -16,10 +16,8 @@ const NoteCard = ({ note }) => {
   };
 
   const editNoteHandler = (e) => {
-    console.log("coming");
     e.preventDefault();
     if (note.title.trim() || note.description.trim()) {
-      console.log("yaya se bhi");
       editNotes({ token, note: formInput });
       setIsEditing(false);
     }
