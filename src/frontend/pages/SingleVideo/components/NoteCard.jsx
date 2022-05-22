@@ -34,8 +34,8 @@ const NoteCard = ({ note }) => {
   ) : (
     <div className="notecard">
       <div>
-        <h4 className="notecard_title">{note.title}</h4>
-        <p>{note.description}</p>
+        <h4 className="notecard_title">{note?.title}</h4>
+        <p>{note?.description}</p>
         <span class="material-icons notecard_icon" onClick={(e) => deleteNoteHandler(e)}>
           delete
         </span>
