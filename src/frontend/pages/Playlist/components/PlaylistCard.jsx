@@ -18,12 +18,12 @@ const PlaylistCard = ({playlist}) => {
         <h4>{playlist.title}</h4>
         <span class="material-icons delete_playlist " onClick={(e)=>{
           e.stopPropagation();
-          deletePlaylist(playlist._id)
+          deletePlaylist(playlist?._id)
         }}>delete</span>
       
          
        </div>
-       <div className="playlistcard_items">{playlist.videos.length}</div>
+       <div className="playlistcard_items">{playlist?.videos?.length}</div>
     </div>
   
   );
