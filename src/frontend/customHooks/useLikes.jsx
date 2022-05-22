@@ -21,6 +21,7 @@ const useLikes = () => {
           });
         }
       } catch (error) {
+        console.error(error)
         toast.error("Try Again Later");
       }
     }
@@ -40,6 +41,7 @@ const useLikes = () => {
           });
         }
       } catch (error) {
+        console.error(error)
         toast.error("Try Again Later");
       }
     }
