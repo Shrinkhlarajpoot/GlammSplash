@@ -21,7 +21,7 @@ const {auth:{token}}=useAuth()
           ) : <div className="clear_watchhistory" onClick={()=>clearWatchHistory({token})}>Clear History</div>}
 
           {watchHistory?.map((video) => (
-            <VideoCard video={video} key={video._id} />
+            <VideoCard video={video} key={video?._id} />
           ))}
         </div>
       </div>
