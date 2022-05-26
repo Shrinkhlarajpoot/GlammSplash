@@ -11,7 +11,7 @@ const Home = () => {
      <img src="./assests/glamhome3.jpg" className="homepage_img"></img>
       <div className="home_content">
         <div className="heading-home">WELCOME TO GLAMM-SPLASH <span  class="material-icons-outlined">play_circle</span></div>
-        <div className="desp-home">Explore Different Videos for Makeup,SkinCare,Hairstyle At One Place..</div>
+        <div className="desp-home">Explore Different Videos for Makeup, SkinCare & Hairstyles</div>
         <div className="home-btn" onClick={()=>navigate("/explore")}>EXPLORE</div>
         <span
           class="material-icons-outlined light_mode-btn homepgae-toggle "

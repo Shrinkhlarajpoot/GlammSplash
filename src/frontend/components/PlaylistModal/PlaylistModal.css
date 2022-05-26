@@ -8,6 +8,14 @@
   z-index: 5;
   overflow: hidden;
 }
+.playlist_modal-desp{
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  margin-bottom: 1rem;
+}
+.playlist_modal-title{
+  word-break: break-all;
+}
 input[type="checkbox"] {
   padding: 5px;
   accent-color: var(--primary-color);
@@ -72,6 +80,10 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.playlist_modal-btn-notallowed{
+  cursor: not-allowed;
+  opacity: 8;
 }
 
 

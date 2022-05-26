@@ -19,20 +19,23 @@ const Navbar = () => {
     if(pathname!=="/explore"){
       navigate("/explore")
     }
-
-  }
+}
  return (
     <div className={`Navbar_wrapper ${themetoggle ? "lighttheme" : ""}`}>
       <div className="main__logo" role="button" onClick={()=>navigate("/")}>
         <span class="material-icons">play_circle_outline</span>
         GLAMM-SPLASH
       </div>
+    
       <input
         type="text"
         placeholder="search here..."
         className="Navbar_input"
+        value={videolistingState.searchedText}
         onChange={(e)=>debounce(changeHandler(e))}
       ></input>
+  
+      
       <div className="Navbar_lastitems">
         <span
           class="material-icons-outlined light_mode-btn "
@@ -46,7 +49,7 @@ const Navbar = () => {
           onClick={() => (token ? navigate("/profile") : navigate("/login"))}
         >
           <span class="material-icons">account_circle</span>
-          <span>{token ? "Profile" : "Login"}</span>
+          <span></span>
         </div>
       </div>
     </div>

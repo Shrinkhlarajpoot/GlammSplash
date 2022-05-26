@@ -1,6 +1,6 @@
 .add_newplaylist_btn{
   width: 22rem;
-  height: 14rem;
+  height: 16rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,9 +31,11 @@
   width: 100%;
  display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 2rem 1rem 0 0.2rem;
     align-content: flex-start;
+    gap:0 1rem;
+    padding:0 0 0 2rem;
 }
 .addnewplaylist_cancelbtn{
   position: absolute;
@@ -42,6 +44,11 @@
 }
 .playlist-wrapper{
   justify-content: space-around;
+}
+@media screen and (max-width:1032px) {
+  .playlist_main_container{
+  padding: 0 0 0 0;
+  }
 }
 
  @media screen and (max-width:808px){

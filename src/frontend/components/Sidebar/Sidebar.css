@@ -74,8 +74,13 @@
     align-items: space-around;
     padding: 0 0 0 0;
     border-radius: none;
-  
-   
+    color:white;
+  }
+  .active {
+    border:none;
+    background-color: var(--bg-color);
+    color:var(--primary-color)
+    
   }
 }
 @media screen and (max-width: 680px) {

@@ -16,7 +16,6 @@ const PlaylistModal = ({ showPlaylistModal, setShowPlaylistModal, video }) => {
       setNewPlaylistName("");
     }
   };
-
   return (
     <>
       {showPlaylistModal ? (
@@ -37,7 +36,7 @@ const PlaylistModal = ({ showPlaylistModal, setShowPlaylistModal, video }) => {
                   (playlistVideo) => playlistVideo?._id === video?._id
                 );
                 return (
-                  <div key={playlist._id}>
+                  <div key={playlist._id} className="playlist_modal-desp">
                     <input
                       type="checkbox"
                       checked={videoInPlaylist ? true : false}
@@ -51,7 +50,7 @@ const PlaylistModal = ({ showPlaylistModal, setShowPlaylistModal, video }) => {
                       }
                     />
 
-                    {playlist.title}
+                    <span className="playlist_modal-title">{playlist.title}</span>
                   </div>
                 );
               })}
@@ -65,8 +64,9 @@ const PlaylistModal = ({ showPlaylistModal, setShowPlaylistModal, video }) => {
               ></input>
 
               <button
-                className="playlist_modal-btn"
+                className={`playlist_modal-btn ${newPlaylistName.trim()===""?"playlist_modal-btn-notallowed":""}`}
                 type="submit"
+                disabled={newPlaylistName.trim()===""}
                 onClick={(e) => submitNewPlaylistFormHandler(e)}
               >
                 Create New Playlist{" "}

@@ -2,7 +2,7 @@ import "./SingleVideo.css";
 import { useState } from "react";
 import { Loader, Navbar, PlaylistModal, Sidebar } from "../../components";
 import { NoteCard } from "./components/NoteCard";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useAuth, useVideoListing } from "../../context";
 import ReactPlayer from "react-player";
 import {
@@ -13,11 +13,13 @@ import {
 } from "../../customHooks";
 import { useEffect } from "react";
 import { NoteInput } from "./components/NoteInput";
+
 const SingleVideo = () => {
   const [showPlaylistModal, setShowPlaylistModal] = useState(false);
   const [formInput, setFormInput] = useState({ title: "", description: "" });
   const { videoId } = useParams();
   const { videolistingState } = useVideoListing();
+  const navigate = useNavigate();
   const {
     watchlaterState: { watchLater },
     deleteWatchlater,
@@ -116,7 +118,10 @@ const SingleVideo = () => {
                 </span>
                 <a
                   class="btn btn_icon-primary single_btn"
-                  onClick={() => setShowPlaylistModal(true)}
+                  onClick={() => {
+                    token?
+                    setShowPlaylistModal(true)
+                  :navigate("/login")}}
                 >
                   <i class="fa fa-folder"></i>Add to Playlist
                 </a>

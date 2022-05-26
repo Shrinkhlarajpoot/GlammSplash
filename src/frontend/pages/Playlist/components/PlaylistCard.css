@@ -2,11 +2,9 @@
  min-width:20rem;
 position: relative;
 flex-direction: column;
-
- 
 }
 .playlist_img {
-  height:10rem;
+  height:12rem;
   width: 100%;;
 }
 .playlistcard_items {
@@ -32,4 +30,16 @@ flex-direction: column;
   padding: 0 1rem;
   color: var(--text-color);
   z-index: 6;
+ 
+  /* -webkit-line-clamp: 1;
+  overflow: hidden;
+  display: -webkit-box; */
+}
+.playlistcard_desp-desptitle{
+  width:80%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+ 
 }

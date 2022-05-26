@@ -25,8 +25,8 @@ const SinglePlaylist = () => {
         <Sidebar />
         <div className=" playlist_main_container single_playlist_container">
         <div className="single_playlist_container-headings">
-            <div className="heading_for_emptypage">{(currentPlaylist?.title)?.toUpperCase()}</div>
-            <div className="heading_for_emptypage">{currentPlaylist?.videos&& `Total Video:${currentPlaylist?.videos?.length}`}</div>
+            <div className="heading_for_emptypage single_playlist-mainheading">{(currentPlaylist?.title)?.toUpperCase()}</div>
+            <div className="heading_for_emptypage">{currentPlaylist?.videos&& `Videos:${currentPlaylist?.videos?.length}`}</div>
             </div>
             {currentPlaylist?.videos.length===0?<div className="heading_for_emptypage2">No Video Added!!</div>:null}
           
