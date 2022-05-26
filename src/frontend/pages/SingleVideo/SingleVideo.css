@@ -14,9 +14,11 @@
     color:var(--text-color)
    
 }
+
 .single_product-owner  img{
     margin:0 1rem 0 0;
 }
+
 .check_mark{
     font-size:1rem;
     padding:0 5px;

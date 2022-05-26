@@ -10,7 +10,7 @@ flex-direction: column;
 .playlistcard_items {
   position: absolute;
   width: 5rem;
-  height: 72%;
+  height: 77%;
   right: 0;
   top: 0;
   background-color: rgb(32, 33, 36, 0.8);

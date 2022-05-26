@@ -12,6 +12,9 @@
     color: var(--text-color);
 
 }
+.notes_loginheading{
+    color:red;
+}
 .notes_form{
     width:90%;
     display: flex;
@@ -68,6 +71,9 @@
     color:var(--primary-color);
     background-color: var(--bg2-color);
     cursor: pointer;
+}
+.btn-notallowed{
+    cursor: not-allowed;
 }
 @media screen  and (max-width:1223px){
     .notecard_wrapper {

@@ -131,7 +131,8 @@ const SingleVideo = () => {
               </div>
             </div>
             <div className="notes">
-              <div className="notes_heading">Add Note</div>
+              <div className="notes_heading">Add Note</div> 
+              {!token && <span className="notes_heading notes_loginheading">Login to Add Note</span>}
               <NoteInput
                 formInput={formInput}
                 setFormInput={setFormInput}
