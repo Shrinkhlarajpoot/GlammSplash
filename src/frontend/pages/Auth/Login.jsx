@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Auth.css";
 import { LoginValidChecker } from "../../utils/FormValidationChecker";
@@ -7,7 +7,7 @@ import { useAuth } from "../../context";
 
 const Login = () => {
   const navigate = useNavigate();
-
+   const location = useLocation();
   const { setAuth, showpassword, setShowPassword } = useAuth();
   const [submit, setSubmit] = useState(false);
   const [errors, setErrors] = useState({});

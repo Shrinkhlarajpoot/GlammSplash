@@ -31,8 +31,7 @@ const Navbar = () => {
         type="text"
         placeholder="search here..."
         className="Navbar_input"
-        value={videolistingState.searchedText}
-        onChange={(e)=>debounce(changeHandler(e))}
+       onChange={debounce(changeHandler)}
       ></input>
   
       

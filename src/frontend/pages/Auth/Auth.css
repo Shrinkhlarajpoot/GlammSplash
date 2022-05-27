@@ -18,9 +18,10 @@
     max-width: 25rem;
     background-color: var(--bg-color);
     height: fit-content;
-    margin: auto;
+   margin: auto;
    padding: 2.5rem 0.5rem;
-  border: 1px solid var(--primary-color);
+   border: 1px solid var(--primary-color);
+  
   }
   #close {
     position: absolute;

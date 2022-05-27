@@ -1,9 +1,11 @@
 const debounce = (fun,delay=400) => {
-  let timerId;
+  console.log(fun,"hoho")
+ let timerId;
   return function (...args) {
     clearTimeout(timerId);
     timerId = setTimeout(() => {
-      fun(args);
+      console.log("coming")
+      fun(...args);
     },delay);
   };
 };
