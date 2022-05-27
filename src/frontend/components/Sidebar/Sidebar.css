@@ -52,7 +52,7 @@
     padding: 0.5rem  0;
     background-color: var(--bg-color);
     margin-top: 2rem;
-   border-top: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
   }
  
 
@@ -74,7 +74,7 @@
     align-items: space-around;
     padding: 0 0 0 0;
     border-radius: none;
-    color:white;
+    color: var(--text-color);
   }
   .active {
     border:none;
