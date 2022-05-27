@@ -50,13 +50,23 @@ const Explore = () => {
               </span>
             ))}
           </div>
+
           <div className="explore_videos">
             {loading ? <Loader /> : null}
-           
-              
-            {selectedVideoList?.map((video) => (
-              <VideoCard video={video} key={video._id} />
-            ))}
+            {selectedVideoList.length > 0 ? (
+              selectedVideoList?.map((video) => (
+                <VideoCard video={video} key={video._id} />
+              ))
+            ) : loading === false ? (
+              <div className="empty_container-heading ">
+                No Item Exist for this Search <span className="recover_explore" onClick={()=>videolistingDispatch({
+                  type:"SET_SEACH_TEXT",
+                  payload:{
+                    searchedText:""
+                  }
+                })}>Explore..</span>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
@@ -77,7 +87,6 @@ const Explore = () => {
           toggleLatestPalette={toggleLatestPalette}
         />
       ) : null}
-        
     </div>
   );
 };

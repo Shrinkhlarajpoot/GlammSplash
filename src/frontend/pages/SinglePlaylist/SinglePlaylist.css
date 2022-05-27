@@ -18,10 +18,17 @@
     
 }
 .single_playlist_container-headings{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--primary-color);
+   
+}
+.single_playlist-mainheading{
+    width:60%;
+    word-break: break-all;
+    
+
 }
 @media screen and (max-width:808px){
     .single_playlist_container{

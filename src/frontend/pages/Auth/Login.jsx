@@ -40,6 +40,7 @@ const Login = () => {
     e.preventDefault();
     setSubmit(true);
     setErrors(() => LoginValidChecker(loginform));
+    
   };
   const changeHandler = (e) => {
     const { value, name } = e.target;
@@ -109,11 +110,7 @@ const Login = () => {
           <button
             className="sub__main2 sub__main3 Link_style"
             onClick={(e) =>
-              setLoginForm({
-                ...loginform,
-                email: "adarshbalika@gmail.com",
-                password: "a1234",
-              })
+               setLoginForm({...loginform,email:"shrinkhla@gmail.com",password:"a1234"})
             }
           >
             Login With test Credentials

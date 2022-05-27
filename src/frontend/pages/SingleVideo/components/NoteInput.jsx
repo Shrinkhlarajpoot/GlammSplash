@@ -17,14 +17,18 @@ const navigate =useNavigate()
               ></input>
               <textarea placeholder="Desp" className="notes_desp" value={formInput.description} onChange={(e)=>setFormInput({...formInput,description:e.target.value})}></textarea>
               <div className="notes_btns">
-                <button onClick={(e)=>{
+                <button 
+                disabled={token?false:true}
+                onClick={(e)=>{
                 token?null:navigate("/login")
                 submitFormHandler(e)}
-                }>Submit</button>
-                <button onClick={(e)=>{
+                } className={`${token?"":"btn-notallowed"}`}>Submit</button>
+                <button
+                disabled={token?false:true}
+                 onClick={(e)=>{
                      e.preventDefault()
                     isediting?setIsEditing(false):null,
-                setFormInput({title:"",description:""})}}>Discard</button>
+                setFormInput({title:"",description:""})}} className={` ${token?"":"btn-notallowed"}`} >Discard</button>
               </div>
               </form >
              

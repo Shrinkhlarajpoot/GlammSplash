@@ -22,7 +22,15 @@
   padding: 0 0 0 2rem;
   margin: 0 1rem;
   width: 85%;
+ 
+
 }
+.recover_explore{
+  margin-left:1rem;
+  color:var(--primary-color);
+  cursor: pointer;
+}
+
 
 .category_wrapper > * {
   width: fit-content;
@@ -30,7 +38,7 @@
   padding: 0.5rem 1rem;
   margin: 0.5rem 1rem;
   border: 0.1px solid var(--primary-color);
-  border-radius: 18px;
+  border-radius:0.3rem;
   cursor: pointer;
   color: var(--text-color);
 }

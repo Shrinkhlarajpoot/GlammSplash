@@ -15,7 +15,7 @@ const PlaylistCard = ({playlist}) => {
       ></img>
         </Link>
       <div className="playlistcard_desp-desp">
-        <h4>{playlist.title}</h4>
+        <h4 className="playlistcard_desp-desptitle">{playlist.title}</h4>
         <span class="material-icons delete_playlist " onClick={(e)=>{
           e.stopPropagation();
           deletePlaylist(playlist?._id)
