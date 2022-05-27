@@ -30,7 +30,7 @@ const Login = () => {
             user: { user: token.data.foundUser },
           });
 
-          navigate("/explore");
+          navigate(-1);
         }
       }
     })();
